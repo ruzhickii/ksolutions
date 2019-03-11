@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $openSans;
+}
+
+html,body {height: 100%; overflow: auto}
+
+h1,h2,h3,h4,h5,h6 {margin: 0; padding: 0}
+
+
+// STYlES
+
+//---------- loader -----------
+.preloader {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: $black;
+  visibility: visible;
+  opacity: 1;
+  transition: 1s all;
+  z-index: 9999;
+
+  &__loader {
+    width: 380px;
+    margin: 20% auto;
+    border: 10px solid $white;
+    border-radius: 50%;
+    padding: 30px;
+  }
+}
+
+.done {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+//---------- header ------------
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 90px;
+  background: $blue;
+  margin: 0 0 35px 0;
+  position: sticky;
+  top: 0;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 950px;
+    margin: 0 auto;
+  }
+
+  &__logo {
+    max-width: 230px;
+    max-height: 65px;
+    margin-left: -20px;
+  }
+
+  .nav {
+
+    &__icon {
+      color: $white;
+      margin-right: 5px;
+    }
+
+    &__email {
+      text-decoration: none;
+      color: $lightblue;
+      font: {
+        size: 18px;
+        weight: 100;
+      }
+      letter-spacing: 1px;
+    }
+
+    &__lang {
+      max-width: 170px;
+      display: inline-block;
+      margin-left: 15px;
+    }
+
+    &__eng {
+      color: $lightblue;
+      letter-spacing: 1px;
+      cursor: pointer;
+    }
+
+    &__rus {
+      color: $white;
+      position: relative;
+      margin-left: 25px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      font: {
+        weight: bold;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        height: 35px;
+        max-width: 1px;
+        top: -9px;
+        left: -15px;
+        right: 0;
+        bottom: 0;
+        background: $lightblue;
+      }
+    }
+  }
+}
+//-------- End header -------------
+
+//-------- section invoice --------
+.wrapper {
+  max-width: 950px;
+  max-height: 270px;
+  margin: 0 auto;
+
+  &_shadow {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .25);
+  }
+
+
+  .invoice {
+    padding: 40px 30px;
+
+    &__header {
+      color: $blueText;
+      font: {
+        weight: bold;
+      }
+      margin: 0 0 30px 0;
+    }
+
+    &__recipient-wrapper {
+      margin: 0 0 25px 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__recipient-heading {
+      color: $grayText;
+    }
+
+    &__recipient {
+
+    }
+
+    &__description-wrapper {
+      margin: 0 0 25px 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__description-heading {
+      color: $grayText;
+    }
+
+    &__description {
+
+    }
+
+    &__hr {
+      border: none;
+      height: 1px;
+      background: $grayLine;
+    }
+
+    &__sum-wrapper {
+      margin: 15px 0 0 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__sum-heading {
+      color: $blueText;
+      font: {
+        size: 24px;
+        weight: bold;
+      }
+    }
+
+    &__sum {
+      color: $blueText;
+      font: {
+        size: 24px;
+        weight: bold;
+      }
+    }
+  }
+}
+//--------- End section invoice ---------------
+
+//--------- section payment -------------------
+.payment-header {
+  color: $blueText;
+  font: {
+    size: 32px;
+    weight: bold;
+  }
+  margin: 60px 0 60px 0;
+}
+
+.payment {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__link {
+    text-decoration: none;
+
+  }
+
+  &__method {
+    width: 180px;
+    min-height: 160px;
+    background: $lightGray;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 1px 3px 1px $gray, -1px 0 0 $gray , 0px 0px 0px $gray, 0px 0px 0px $gray;
+    transition: all .3s;
+
+    &:hover {
+      box-shadow: 0 10px 10px #ccc;
+    }
+  }
+
+  &__img {
+    margin-bottom: 5px;
+  }
+
+  &__title {
+    color: $blueText;
+    font-weight: 300;
+  }
+}
+//------------- End section payment -------------------
+
+//------------- footer --------------------------------
+.footer {
+  height: 77px;
+
+}
+
+
+
+
+
+
