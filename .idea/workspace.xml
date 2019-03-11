@@ -3,6 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="0dc4badb-e896-453e-9396-262f55e86c43" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/style.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/images/bitcoin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/images/logo_white_animated.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/images/masterCard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/images/mts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/images/payeer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/images/pciDss.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/images/visa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/images/visa_mc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/images/webmoney.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/common.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page2.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -22,7 +35,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
+            <state relative-caret-position="206">
               <caret line="90" column="14" selection-start-line="90" selection-start-column="14" selection-end-line="90" selection-end-column="14" />
             </state>
           </provider>
@@ -138,12 +151,12 @@
       <workItem from="1552236533028" duration="10722000" />
       <workItem from="1552252223392" duration="1240000" />
       <workItem from="1552313452555" duration="13256000" />
-      <workItem from="1552342651802" duration="1324000" />
+      <workItem from="1552342651802" duration="1571000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28166000" />
+    <option name="totallyTimeSpent" value="28413000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -290,7 +303,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
+        <state relative-caret-position="206">
           <caret line="90" column="14" selection-start-line="90" selection-start-column="14" selection-end-line="90" selection-end-column="14" />
         </state>
       </provider>
