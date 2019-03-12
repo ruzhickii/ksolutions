@@ -49,11 +49,14 @@
 
     &__payment-mathods {
       margin: 10px 0 10px 0;
+      padding: 10px;
       justify-content: space-evenly;
     }
 
     &__lang {
       margin: 10px 0 10px 0;
+      font-size: 11px;
+      text-align: center;
     }
   }
 }
