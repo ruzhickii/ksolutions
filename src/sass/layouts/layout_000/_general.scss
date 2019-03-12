@@ -7,10 +7,10 @@
 body {
   font-family: $openSans;
 
-  //display: flex;
-  //min-height: 100vh;
-  //height: auto;
-  //flex-direction: column;
+  display: flex;
+  min-height: 100vh;
+  height: auto;
+  flex-direction: column;
 }
 
 html,body {
@@ -23,29 +23,28 @@ h1,h2,h3,h4,h5,h6 {margin: 0; padding: 0}
 // STYlES
 
 //---------- loader -----------
-.preloader {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  background: $black;
-  visibility: visible;
-  opacity: 1;
-  transition: 1s all;
-  z-index: 9999;
-
-  &__loader {
-    max-width: 380px;
-    margin: 20% auto;
-    border: 10px solid $white;
-    border-radius: 50%;
-    padding: 30px;
-  }
-}
-
-.done {
-  opacity: 0;
-  visibility: hidden;
-}
+//.preloader {
+//  position: absolute;
+//  width: 100%;
+//  background: $black;
+//  visibility: visible;
+//  opacity: 1;
+//  transition: 1s all;
+//  z-index: 9999;
+//
+//  &__loader {
+//    max-width: 380px;
+//    margin: 20% auto;
+//    border: 10px solid $white;
+//    border-radius: 50%;
+//    padding: 30px;
+//  }
+//}
+//
+//.done {
+//  opacity: 0;
+//  visibility: hidden;
+//}
 
 
 //---------- header ------------
@@ -56,7 +55,7 @@ h1,h2,h3,h4,h5,h6 {margin: 0; padding: 0}
   min-height: 90px;
   background: $blue;
   margin: 0 0 35px 0;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 9998;
 
@@ -132,24 +131,22 @@ h1,h2,h3,h4,h5,h6 {margin: 0; padding: 0}
 //-------- End header -------------
 
 .main {
-  height: 100%;
+  margin: 160px 5px 0 5px;
   z-index: 0;
-
-  //flex: 1 0 auto;
-  //display: flex;
-  //flex-direction: column;
-
 }
 
 //-------- section invoice --------
-.wrapper {
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.invoice-wrapper {
   margin: 0 auto;
   max-width: 950px;
-  max-height: 270px;
+  min-height: 270px;
 
-  &_shadow {
-
-  }
 
   .invoice {
     max-width: 950px;
@@ -280,7 +277,7 @@ h1,h2,h3,h4,h5,h6 {margin: 0; padding: 0}
   align-items: center;
   width: 100%;
 
-  //flex-shrink: 0;
+  flex-shrink: 0;
 
   .footer {
     max-width: 950px;
