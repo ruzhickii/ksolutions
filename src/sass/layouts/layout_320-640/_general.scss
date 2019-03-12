@@ -42,5 +42,18 @@
 
   .footer {
     flex-direction: column;
+
+    &__contacts {
+      margin: 10px 0 10px 0;
+    }
+
+    &__payment-mathods {
+      margin: 10px 0 10px 0;
+      justify-content: space-evenly;
+    }
+
+    &__lang {
+      margin: 10px 0 10px 0;
+    }
   }
 }
