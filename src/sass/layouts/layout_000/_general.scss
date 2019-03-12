@@ -8,7 +8,10 @@ body {
   font-family: $openSans;
 }
 
-html,body {height: 100%; overflow: auto}
+html,body {
+  height: 100%;
+  overflow: auto;
+}
 
 h1,h2,h3,h4,h5,h6 {margin: 0; padding: 0}
 
@@ -27,7 +30,7 @@ h1,h2,h3,h4,h5,h6 {margin: 0; padding: 0}
   z-index: 9999;
 
   &__loader {
-    width: 380px;
+    max-width: 380px;
     margin: 20% auto;
     border: 10px solid $white;
     border-radius: 50%;
@@ -51,6 +54,7 @@ h1,h2,h3,h4,h5,h6 {margin: 0; padding: 0}
   margin: 0 0 35px 0;
   position: sticky;
   top: 0;
+  z-index: 9998;
 
   &__wrapper {
     display: flex;
@@ -123,19 +127,28 @@ h1,h2,h3,h4,h5,h6 {margin: 0; padding: 0}
 }
 //-------- End header -------------
 
+.main {
+  position: relative;
+  height: 100%;
+  z-index: 0;
+}
+
 //-------- section invoice --------
 .wrapper {
+  margin: 0 auto;
   max-width: 950px;
   max-height: 270px;
-  margin: 0 auto;
 
   &_shadow {
-    box-shadow: 0 3px 10px rgba(0, 0, 0, .25);
+
   }
 
-
   .invoice {
-    padding: 40px 30px;
+    max-width: 950px;
+    max-height: 270px;
+    padding: 10px;
+    margin: 0 auto;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .25);
 
     &__header {
       color: $blueText;
@@ -211,17 +224,17 @@ h1,h2,h3,h4,h5,h6 {margin: 0; padding: 0}
     size: 32px;
     weight: bold;
   }
-  margin: 60px 0 60px 0;
+  margin: 60px 0 30px 0;
 }
 
 .payment {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 
   &__link {
     text-decoration: none;
-
+    margin: 5px;
   }
 
   &__method {
@@ -251,9 +264,128 @@ h1,h2,h3,h4,h5,h6 {margin: 0; padding: 0}
 //------------- End section payment -------------------
 
 //------------- footer --------------------------------
-.footer {
-  height: 77px;
+.footer-wrapper {
+  max-height: 77px;
+  height: 100%;
+  box-shadow: 0 -4px 10px -6px #333;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 
+  .footer {
+    max-width: 950px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    &__contacts {
+
+    }
+
+    &__contacts-text {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $grayText;
+      filter: grayscale(1);
+      transition: all .5s;
+
+      &:hover {
+        filter: grayscale(0);
+        color: $black;
+      }
+    }
+
+    &__payment-methods {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 360px;
+    }
+
+    &__payment-method {
+      filter: grayscale(1);
+      transition: all 1s;
+
+      &:hover {
+        filter: grayscale(0);
+      }
+    }
+
+    &__method-img {
+      filter: grayscale(1);
+      transition: all .5s;
+
+      &:hover {
+        filter: grayscale(0);
+      }
+    }
+
+    &__lang {
+      max-width: 165px;
+      width: 200px;
+      display: inline-block;
+      text-align: right;
+      filter: grayscale(1);
+      transition: all .5s;
+
+      &:hover {
+        filter: grayscale(0);
+      }
+    }
+
+    &__eng {
+      color: $blue;
+      letter-spacing: 1px;
+      cursor: pointer;
+    }
+
+    &__rus {
+      color: $black;
+      position: relative;
+      margin-left: 15px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      font: {
+        weight: bold;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        height: 35px;
+        max-width: 1px;
+        top: -9px;
+        left: -10px;
+        right: 0;
+        bottom: 0;
+        background: $blue;
+      }
+    }
+  }
+}
+
+.payment-form {
+  max-width: 250px;
+  margin: 25px auto;
+  text-align: center;
+  border: 1px solid $gray;
+  border-radius: 10px;
+  box-shadow: 1px 15px 10px #777;
+
+  &__email {
+    text-align: center;
+    border: 1px solid $gray;
+    margin: 15px 0;
+  }
+
+  &__submit {
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
 }
 
 

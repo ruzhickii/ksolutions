@@ -51,10 +51,50 @@
             </div>
         </article>
     </section>
-
+    <section>
+        <div class="payment-form">
+            <img src="images/bitcoin.png" alt="bitcoin">
+            <form method="POST" action="https://test-telega.piastrix24.com/api/get_data" accept-charset="UTF-8">
+                <input class="payment-form__email" placeholder="enter email" type="email" name="email" required />
+                <input type="hidden" name="amount" value="10.24" />
+                <input type="hidden" name="currency" value="643" />
+                <input type="hidden" name="shop_id" value="5" />
+                <input type="hidden" name="sign" value="84ba2378edefd18d1f657590ca9d1cfa9dbc8108f9f36e1a05483b6dcc38dde2" />
+                <input type="hidden" name="payway" value="payeer_rub">
+                <input type="hidden" name="shop_order_id" value="101" />
+                <input type="hidden" name="description" value="Test invoice" />
+                <input class="payment-form__submit" type="submit"/>
+            </form>
+        </div>
+    </section>
 </main>
-<footer class="footer">
-
+<footer class="footer-wrapper">
+    <div class="footer">
+        <div class="footer__contacts">
+            <a href="https://ru.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8" class="footer__contacts-text">контакты</a>
+        </div>
+        <div class="footer__payment-methods">
+            <div class="footer__method">
+                <a href="">
+                    <img class="footer__method-img" src="images/visa.png" alt="visa">
+                </a>
+            </div>
+            <div class="footer__method">
+                <a href="">
+                    <img class="footer__method-img" src="images/masterCard.png" alt="masterCard">
+                </a>
+            </div>
+            <div class="footer__method">
+                <a href="">
+                    <img class="footer__method-img" src="images/pciDss.png" alt="pciDss">
+                </a>
+            </div>
+        </div>
+        <div class="footer__lang">
+            <span class="footer__eng">English</span>
+            <span class="footer__rus">Русский</span>
+        </div>
+    </div>
 </footer>
 </body>
 </html>

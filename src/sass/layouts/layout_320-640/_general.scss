@@ -1,0 +1,42 @@
+.header {
+
+  &__wrapper {
+
+  }
+
+  &__logo {
+    margin: 0 auto;
+  }
+
+  .nav {
+    text-align: center;
+    margin: 0 auto;
+
+    &__lang {
+      margin: 15px auto;
+    }
+  }
+}
+
+.wrapper {
+  margin: 10px;
+
+  .invoice {
+    max-height: 100%;
+
+    &__header {
+      text-align: center;
+    }
+  }
+}
+
+.payment-header {
+  text-align: center;
+}
+
+.footer-wrapper {
+
+  .footer {
+    flex-direction: column;
+  }
+}
