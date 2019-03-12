@@ -6,11 +6,14 @@
 
 body {
   font-family: $openSans;
+  display: flex;
+  min-height: 100vh;
+  height: auto;
+  flex-direction: column;
 }
 
 html,body {
   height: 100%;
-  overflow: auto;
 }
 
 h1,h2,h3,h4,h5,h6 {margin: 0; padding: 0}
@@ -128,9 +131,12 @@ h1,h2,h3,h4,h5,h6 {margin: 0; padding: 0}
 //-------- End header -------------
 
 .main {
-  position: relative;
   height: 100%;
   z-index: 0;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+
 }
 
 //-------- section invoice --------
@@ -270,9 +276,9 @@ h1,h2,h3,h4,h5,h6 {margin: 0; padding: 0}
   box-shadow: 0 -4px 10px -6px #333;
   display: flex;
   align-items: center;
-  position: absolute;
   width: 100%;
   bottom: 0;
+  flex-shrink: 0;
 
   .footer {
     max-width: 950px;
