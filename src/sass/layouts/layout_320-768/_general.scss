@@ -1,9 +1,5 @@
 .header {
 
-  &__wrapper {
-
-  }
-
   &__logo {
     margin: 0 auto;
   }
@@ -18,12 +14,8 @@
   }
 }
 
-.main {
 
-}
-
-.invoice-wrapper {
-  margin: 10px;
+.container {
 
   .invoice {
     max-height: 100%;
@@ -34,9 +26,11 @@
   }
 }
 
-.payment-header {
+
+.payment__header {
   text-align: center;
 }
+
 
 .footer-wrapper {
 
@@ -49,7 +43,6 @@
 
     &__payment-mathods {
       margin: 10px 0 10px 0;
-      padding: 10px;
       justify-content: space-evenly;
     }
 
@@ -57,6 +50,24 @@
       margin: 10px 0 10px 0;
       font-size: 11px;
       text-align: center;
+    }
+
+    &__rus {
+      color: $black;
+      position: relative;
+      margin-left: 15px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      font: {
+        weight: bold;
+      }
+
+      &:before {
+        content: '';
+        height: 20px;
+        max-width: 1px;
+        top: -3px;
+      }
     }
   }
 }

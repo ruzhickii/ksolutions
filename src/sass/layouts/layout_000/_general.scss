@@ -48,7 +48,7 @@ h1,h2,h3,h4,h5,h6 {margin: 0; padding: 0}
   opacity: 0;
   visibility: hidden;
 }
-
+//---------- End loader --------
 
 //---------- header ------------
 .header {
@@ -92,6 +92,12 @@ h1,h2,h3,h4,h5,h6 {margin: 0; padding: 0}
         weight: 100;
       }
       letter-spacing: 1px;
+      transition: all .5s;
+
+      &:hover {
+        color: $white;
+        font-size: 17px;
+      }
     }
 
     &__lang {
@@ -133,27 +139,25 @@ h1,h2,h3,h4,h5,h6 {margin: 0; padding: 0}
 }
 //-------- End header -------------
 
+//-------- main --------------------
 .main {
   margin: 160px 5px 0 5px;
   z-index: 0;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
 }
+//-------- End main ---------------
 
 //-------- section invoice --------
-
 .container {
-  max-width: 950px;
   margin: 0 auto;
+  width: 100%;
+  max-width: 950px;
 }
 
-.invoice-wrapper {
-  margin: 0 auto;
-  max-width: 950px;
-  min-height: 270px;
-
-
   .invoice {
-    max-width: 950px;
-    max-height: 270px;
+    width: 100%;
     padding: 10px;
     margin: 0 auto;
     box-shadow: 0 3px 10px rgba(0, 0, 0, .25);
@@ -226,23 +230,26 @@ h1,h2,h3,h4,h5,h6 {margin: 0; padding: 0}
       }
     }
   }
-}
+
 //--------- End section invoice ---------------
 
 //--------- section payment -------------------
-.payment-header {
-  color: $blueText;
-  font: {
-    size: 32px;
-    weight: bold;
-  }
-  margin: 60px 0 30px 0;
-}
-
 .payment {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+
+  &__header {
+    color: $blueText;
+    font: {
+      size: 32px;
+      weight: bold;
+    }
+    margin: 60px 0 30px 0;
+  }
+
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 
   &__link {
     text-decoration: none;
@@ -316,6 +323,7 @@ h1,h2,h3,h4,h5,h6 {margin: 0; padding: 0}
       justify-content: space-between;
       width: 100%;
       max-width: 360px;
+      padding: 10px;
     }
 
     &__payment-method {
@@ -379,7 +387,9 @@ h1,h2,h3,h4,h5,h6 {margin: 0; padding: 0}
     }
   }
 }
+//------------ End footer -------------
 
+//------------ form -------------------
 .payment-form {
   max-width: 250px;
   margin: 25px auto;
