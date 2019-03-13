@@ -7,10 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
     <title>Page 2</title>
 </head>
 <body>
 <script src="js/common.js"></script>
+
 <div id="preloader" class="preloader">
     <div class="preloader__loader">
         <img src="./images/logo_white_animated.svg" alt="logo">
@@ -56,13 +58,6 @@
             <img src="images/bitcoin.png" alt="bitcoin">
             <form method="POST" action="https://test-telega.piastrix24.com/api/get_data" accept-charset="UTF-8">
                 <input class="payment-form__email" placeholder="enter email" type="email" name="email" required />
-                <input type="hidden" name="amount" value="10.24" />
-                <input type="hidden" name="currency" value="643" />
-                <input type="hidden" name="shop_id" value="5" />
-                <input type="hidden" name="sign" value="84ba2378edefd18d1f657590ca9d1cfa9dbc8108f9f36e1a05483b6dcc38dde2" />
-                <input type="hidden" name="payway" value="payeer_rub">
-                <input type="hidden" name="shop_order_id" value="101" />
-                <input type="hidden" name="description" value="Test invoice" />
                 <input class="payment-form__submit" type="submit"/>
             </form>
         </div>
